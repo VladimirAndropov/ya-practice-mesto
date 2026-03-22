@@ -1673,13 +1673,6 @@ JAVASCRIPT
 
 </div>
 
-<div class="react-slidedown theory-viewer__cut-container-slidedown closed" style="height: 0px;">
-
-<div class="theory-viewer__cut-container-content">
-
-<div id="add25b2e-3954-4eda-bfd5-9b6e8401d1b1" class="section theory-viewer__block theory-viewer__block_type_markdown">
-
-<div class="Markdown base-markdown base-markdown_with-gallery markdown markdown_size_normal markdown_type_theory full-markdown">
 
 <div class="paragraph">
 
@@ -1730,17 +1723,6 @@ JAVASCRIPT
 
 </div>
 
-<div class="scrollable-default scrollable scrollable_theme_light code-block__scrollable">
-
-<div>
-
-</div>
-
-<div class="scrollable__content-wrapper">
-
-<div class="scrollbar-remover scrollable__content-container" tabindex="0" style="--scroll-bar-width: 16px; --scroll-bar-height: 16px;">
-
-<div class="scrollable__content">
 
 ``` code-block__code-wrapper
 // файл index.js
@@ -1772,77 +1754,9 @@ const handleInfoClick = (cardId) => {
 }; 
 ```
 
-<div>
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="section scrollbar-default scrollbar scrollbar_vertical scrollbar_hidden scrollable__scrollbar scrollable__scrollbar_type_vertical" style="--scrollbar-offset-size: NaNpx; --scrollbar-control-size: NaNpx; --scrollbar-control-container-size: 100%; --scrollbar-scale: 1; --scrollbar-control-offset: NaN;" size="Infinity">
-
-<div class="scrollbar__control-container">
-
-<div class="scrollbar__control">
-
-<div class="scrollbar__control-line">
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="section scrollbar-default scrollbar scrollbar_horizontal scrollbar_hidden scrollable__scrollbar scrollable__scrollbar_type_horizontal" style="--scrollbar-offset-size: NaNpx; --scrollbar-control-size: NaNpx; --scrollbar-control-container-size: 100%; --scrollbar-scale: 1; --scrollbar-control-offset: NaN;" size="Infinity">
-
-<div class="scrollbar__control-container">
-
-<div class="scrollbar__control">
-
-<div class="scrollbar__control-line">
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="section theory-viewer__block theory-viewer__block_type_cut-container theory-viewer__block_wide">
-
-<div class="theory-viewer__cut-container-title-wrapper">
 
 Вариант 2
-
-</div>
-
-<div class="react-slidedown theory-viewer__cut-container-slidedown closed" style="height: 0px;">
-
-<div class="theory-viewer__cut-container-content">
-
-<div id="7fd6a6e7-aea6-470a-9977-ac1d5154d94c" class="section theory-viewer__block theory-viewer__block_type_markdown">
-
-<div class="Markdown base-markdown base-markdown_with-gallery markdown markdown_size_normal markdown_type_theory full-markdown">
 
 <div class="paragraph">
 
@@ -1892,17 +1806,7 @@ JAVASCRIPT
 
 </div>
 
-<div class="scrollable-default scrollable scrollable_theme_light code-block__scrollable">
 
-<div>
-
-</div>
-
-<div class="scrollable__content-wrapper">
-
-<div class="scrollbar-remover scrollable__content-container" tabindex="0" style="--scroll-bar-width: 16px; --scroll-bar-height: 16px;">
-
-<div class="scrollable__content">
 
 ``` code-block__code-wrapper
 // файл index.js
@@ -1937,77 +1841,11 @@ const handleLogoClick = () => {
 }; 
 ```
 
-<div>
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="section scrollbar-default scrollbar scrollbar_vertical scrollbar_hidden scrollable__scrollbar scrollable__scrollbar_type_vertical" style="--scrollbar-offset-size: NaNpx; --scrollbar-control-size: NaNpx; --scrollbar-control-container-size: 100%; --scrollbar-scale: 1; --scrollbar-control-offset: NaN;" size="Infinity">
-
-<div class="scrollbar__control-container">
-
-<div class="scrollbar__control">
-
-<div class="scrollbar__control-line">
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="section scrollbar-default scrollbar scrollbar_horizontal scrollbar_hidden scrollable__scrollbar scrollable__scrollbar_type_horizontal" style="--scrollbar-offset-size: NaNpx; --scrollbar-control-size: NaNpx; --scrollbar-control-container-size: 100%; --scrollbar-scale: 1; --scrollbar-control-offset: NaN;" size="Infinity">
-
-<div class="scrollbar__control-container">
-
-<div class="scrollbar__control">
-
-<div class="scrollbar__control-line">
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="section theory-viewer__block theory-viewer__block_type_cut-container theory-viewer__block_wide">
-
-<div class="theory-viewer__cut-container-title-wrapper">
 
 Вариант 3
 
-</div>
 
-<div class="react-slidedown theory-viewer__cut-container-slidedown closed" style="height: 0px;">
-
-<div class="theory-viewer__cut-container-content">
-
-<div id="a941e7d6-49ab-46df-88f8-f402946ebc11" class="section theory-viewer__block theory-viewer__block_type_markdown">
-
-<div class="Markdown base-markdown base-markdown_with-gallery markdown markdown_size_normal markdown_type_theory full-markdown">
 
 <div class="paragraph">
 
@@ -2039,21 +1877,8 @@ const handleLogoClick = () => {
 
 Затем необходимо написать в файле `index.js` функцию-обработчик, которая будет получать с сервера актуальный список карточек, на основе этих данных наполнять элементы модального окна нужными данными и открывать данное модальное окно. Не забудьте установить слушатель на логотип, передав ему в качестве обработчика эту функцию.
 
-</div>
 
-</div>
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div id="5a4d0367-770c-4033-a5de-c825dabbdd0b" class="section theory-viewer__block theory-viewer__block_type_markdown">
-
-<div class="Markdown base-markdown base-markdown_with-gallery markdown markdown_size_normal markdown_type_theory full-markdown">
 
 ## Публикуем проект на GitHub Pages
 
@@ -2103,27 +1928,13 @@ const handleLogoClick = () => {
 
 </div>
 
-<div class="javascript code-block code-block_theme_light">
 
-<div class="code-block__tools">
 
 
 
 JAVASCRIPT
 
-</div>
 
-<div class="scrollable-default scrollable scrollable_theme_light code-block__scrollable">
-
-<div>
-
-</div>
-
-<div class="scrollable__content-wrapper">
-
-<div class="scrollbar-remover scrollable__content-container" tabindex="0" style="--scroll-bar-width: 16px; --scroll-bar-height: 16px;">
-
-<div class="scrollable__content">
 
 ``` code-block__code-wrapper
 import { defineConfig } from 'vite';
@@ -2136,51 +1947,6 @@ export default defineConfig({
 }); 
 ```
 
-<div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="section scrollbar-default scrollbar scrollbar_vertical scrollbar_hidden scrollable__scrollbar scrollable__scrollbar_type_vertical" size="1" style="--scrollbar-offset-size: 201px; --scrollbar-control-size: 201px; --scrollbar-control-container-size: 100%; --scrollbar-scale: 1; --scrollbar-control-offset: 0;">
-
-<div class="scrollbar__control-container">
-
-<div class="scrollbar__control">
-
-<div class="scrollbar__control-line">
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="section scrollbar-default scrollbar scrollbar_horizontal scrollbar_hidden scrollable__scrollbar scrollable__scrollbar_type_horizontal" size="1" style="--scrollbar-offset-size: 688px; --scrollbar-control-size: 688px; --scrollbar-control-container-size: 100%; --scrollbar-scale: 1; --scrollbar-control-offset: 0;">
-
-<div class="scrollbar__control-container">
-
-<div class="scrollbar__control">
-
-<div class="scrollbar__control-line">
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
 
 <div class="paragraph">
 
@@ -2188,9 +1954,7 @@ export default defineConfig({
 
 </div>
 
-<div class="javascript code-block code-block_theme_light">
 
-<div class="code-block__tools">
 
 
 
@@ -2198,17 +1962,7 @@ JAVASCRIPT
 
 </div>
 
-<div class="scrollable-default scrollable scrollable_theme_light code-block__scrollable">
 
-<div>
-
-</div>
-
-<div class="scrollable__content-wrapper">
-
-<div class="scrollbar-remover scrollable__content-container" tabindex="0" style="--scroll-bar-width: 16px; --scroll-bar-height: 16px;">
-
-<div class="scrollable__content">
 
 ``` code-block__code-wrapper
   "scripts": {
@@ -2224,45 +1978,7 @@ JAVASCRIPT
 
 </div>
 
-</div>
 
-</div>
-
-<div class="section scrollbar-default scrollbar scrollbar_vertical scrollbar_hidden scrollable__scrollbar scrollable__scrollbar_type_vertical" size="1" style="--scrollbar-offset-size: 129px; --scrollbar-control-size: 129px; --scrollbar-control-container-size: 100%; --scrollbar-scale: 1; --scrollbar-control-offset: 0;">
-
-<div class="scrollbar__control-container">
-
-<div class="scrollbar__control">
-
-<div class="scrollbar__control-line">
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="section scrollbar-default scrollbar scrollbar_horizontal scrollbar_hidden scrollable__scrollbar scrollable__scrollbar_type_horizontal" size="1" style="--scrollbar-offset-size: 688px; --scrollbar-control-size: 688px; --scrollbar-control-container-size: 100%; --scrollbar-scale: 1; --scrollbar-control-offset: 0;">
-
-<div class="scrollbar__control-container">
-
-<div class="scrollbar__control">
-
-<div class="scrollbar__control-line">
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
 
 <div class="paragraph">
 
@@ -2286,17 +2002,7 @@ JAVASCRIPT
 
 </div>
 
-<div class="scrollable-default scrollable scrollable_theme_light code-block__scrollable">
 
-<div>
-
-</div>
-
-<div class="scrollable__content-wrapper">
-
-<div class="scrollbar-remover scrollable__content-container" tabindex="0" style="--scroll-bar-width: 16px; --scroll-bar-height: 16px;">
-
-<div class="scrollable__content">
 
 ``` code-block__code-wrapper
 > mesto@1.0.0 deploy
@@ -2307,49 +2013,7 @@ Published
 
 <div>
 
-</div>
 
-</div>
-
-</div>
-
-</div>
-
-<div class="section scrollbar-default scrollbar scrollbar_vertical scrollbar_hidden scrollable__scrollbar scrollable__scrollbar_type_vertical" size="1" style="--scrollbar-offset-size: 105px; --scrollbar-control-size: 105px; --scrollbar-control-container-size: 100%; --scrollbar-scale: 1; --scrollbar-control-offset: 0;">
-
-<div class="scrollbar__control-container">
-
-<div class="scrollbar__control">
-
-<div class="scrollbar__control-line">
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="section scrollbar-default scrollbar scrollbar_horizontal scrollbar_hidden scrollable__scrollbar scrollable__scrollbar_type_horizontal" size="1" style="--scrollbar-offset-size: 688px; --scrollbar-control-size: 688px; --scrollbar-control-container-size: 100%; --scrollbar-scale: 1; --scrollbar-control-offset: 0;">
-
-<div class="scrollbar__control-container">
-
-<div class="scrollbar__control">
-
-<div class="scrollbar__control-line">
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
 
 <div class="paragraph">
 
@@ -2389,24 +2053,4 @@ Published
 
 </div>
 
-</div>
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div data-overlay-container="true">
-
-</div>
-
-<div data-overlay-container="true">
-
-</div>
-
-<div id="prisma-tooltip-root" style="position: absolute; inset: 0px; overflow: hidden; background: transparent; pointer-events: none;">
-
-</div>

@@ -6,15 +6,6 @@ const config = {
   },
 };
 
-const myHeaders = new Headers();
-myHeaders.append("authorization", "**ed57ff-779c-48f1-9530-b8dff13e46b9");
-
-const requestOptions = {
-  method: "GET",
-  headers: myHeaders,
-  redirect: "follow"
-};
-
 const getResponseData = (res) => {
   return res.ok ? res.json() : Promise.reject(`Ошибка: ${res.status}`);
 };
