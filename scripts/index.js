@@ -1,4 +1,6 @@
 
+import { getUserInfo, setUserInfo, getCardList, updateAvatar, addCard, deleteCard, changeLikeCardStatus } from "api.js";
+
 // @todo: Темплейт карточки
 const profileOpenButton = document.querySelector('.profile__edit-button');  /* кнопка открывает попап-профайл*/
 const profileAddButton = document.querySelector('.profile__add-button'); 
@@ -93,17 +95,29 @@ function addNewItem(event) {     /*создание новой карточки 
     closePopup(popupAdd);
 }
 
+// const removeItem = (cardElement, cardId) => { нужно переделать так
 function removeItem(event){     /*удаление карточки */
     const targetItem = event.target.closest('.places__item');
     targetItem.remove();
 }
 
-function openImage(item){   /*открытие попап-img*/
+
+
+
+// function openImage(item){   /*открытие попап-img*/
+//     popupPic.src = item.link;
+//     popupPic.alt = item.name;
+//     popupAlt.textContent = item.name;
+//     openPopup(popupImg);
+// }
+
+const openImage = (item) => {
     popupPic.src = item.link;
     popupPic.alt = item.name;
     popupAlt.textContent = item.name;
-    openPopup(popupImg);
-}
+  openPopup(popupImg);
+};
+
 // @todo: Функция удаления карточки
 // @todo: Вывести карточки на страницу
 
@@ -113,27 +127,40 @@ function renderList() {
     listContainer.append(...listCards);
 }
  
-function createCard(item){
+function createCard(item,
+    { onOpenImage, onLikeCard, onRemoveItem }
+){
     const newItem = template.content.querySelector('.card').cloneNode(true);
-    const cardsImg = newItem.querySelector('.card__image');
+    const cardsImg = newItem.querySelector('.card__image'); 
     const cardsTitle = newItem.querySelector('.card__title')
     const cardsBtnRemove = newItem.querySelector('card__delete-button');
     const cardsLike = newItem.querySelector('.card__like-button');
- 
+    const likeCount = newItem.querySelector(".card__like-count");
+   // Счётчик лайков
+    likeCount.textContent = item.likes.length;
+
     cardsImg.src = item.link;
     cardsImg.alt = item.name;
     cardsTitle.textContent = item.name;
  
     // cardsBtnRemove.addEventListener('click', removeItem);
- 
-    cardsLike.addEventListener('click', function (evt) {
-    evt.target.classList.toggle('card__like-button_active');
-    });
- 
-    cardsImg.addEventListener('click', function(){
-    openImage(item);
-    });
- 
+   cardsBtnRemove.addEventListener("click", () => onRemoveItem(newItem, item._id));
+
+    // cardsLike.addEventListener('click', function (evt) {
+    // evt.target.classList.toggle('card__like-button_active');
+    // });
+   cardsLike.addEventListener("click", () => {
+    onLikeCard(cardsLike, likeCount, item._id);
+  });
+
+    // cardsImg.addEventListener('click', function(){
+    // openImage(item);
+    // });
+   cardsImg.addEventListener("click", () => {
+    onOpenImage(item);
+  });
+
+
     return newItem;
 }
 
@@ -168,5 +195,32 @@ popupAddBtnClose.addEventListener('click', function (){  /* закрытие п�
 // });
 
 
-renderList();
+//renderList();
 bindAddItemListener();
+
+Promise.all([getCardList(), getUserInfo()])
+  .then(([cards, userData]) => {
+    currentUserId = userData._id;
+
+    // Данные профиля
+    profileInfoName.textContent = userData.name;
+    profileInfoAbout.textContent = userData.about;
+
+    // Карточки
+    cards.forEach((item) => {
+      placesWrap.append(
+        createCard(
+          item,
+          {
+             onOpenImage: openImage,
+            // onLikeCard: handleLikeCard,
+            // onRemoveItem: removeItem,
+          },
+          currentUserId
+        )
+      );
+    });
+  })
+  .catch((err) => {
+    console.log(err)
+   });
