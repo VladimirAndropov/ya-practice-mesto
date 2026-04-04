@@ -1,3 +1,6 @@
+# проект переехал на https://github.com/VladimirAndropov/mesto-ad
+
+
 <div id="mount">
 
 <div class="app">
